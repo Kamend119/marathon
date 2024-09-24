@@ -27,7 +27,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="0.15*" />
             </Grid.ColumnDefinitions>
-            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center">
+            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center" Click="BackToScrin">
                 <TextBlock FontSize="15" FontFamily="Open Sans Light">Назад</TextBlock>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -42,7 +42,61 @@
         </Grid>
 
         <Grid Background="White" Grid.Column="0" Grid.Row="1" >
+            <StackPanel VerticalAlignment="Top">
+                <TextBlock></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="20" Foreground="#FF505050" FontFamily="Open Sans Light">Форма авторизации</TextBlock>
+                <TextBlock></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Пожалуйста, авторизуйтесь в системе, используя ваш адрес электронной почты</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="15" Foreground="Black" FontFamily="Open Sans Light">и пароль.</TextBlock>
+                <TextBlock></TextBlock>
 
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Width="70">
+                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Email:</TextBlock>
+                    </Border>
+                    <Border Width="300">
+                        <TextBox Width="250" Height="25" HorizontalAlignment="Center" FontStyle="Italic" FontSize="15" Foreground="#FFB4B4B4" FontFamily="Open Sans Light" >Enter your email address</TextBox>
+                    </Border>
+                </StackPanel>
+
+                <TextBlock></TextBlock>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Width="70">
+                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Password:</TextBlock>
+                    </Border>
+                    <Border Width="300">
+                        <TextBox Width="250" Height="25" HorizontalAlignment="Center" FontStyle="Italic" FontSize="15" Foreground="#FFB4B4B4" FontFamily="Open Sans Light">Enter your password</TextBox>
+                    </Border>
+                </StackPanel>
+
+                <TextBlock></TextBlock>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Width="90">
+                        <Button Height="25" Width="60" Background="#FFEBEBEB">
+                            <TextBlock FontSize="15" FontFamily="Open Sans Light">Login</TextBlock>
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="5">
+                                    </Setter>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Border>
+                    <Border Width="90">
+                        <Button Height="25" Width="60" Background="#FFEBEBEB">
+                            <TextBlock FontSize="15" FontFamily="Open Sans Light">Cancel</TextBlock>
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="5">
+                                    </Setter>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
         </Grid>
 
         <Grid Background="#FF505050" Grid.Column="0" Grid.Row="2" >

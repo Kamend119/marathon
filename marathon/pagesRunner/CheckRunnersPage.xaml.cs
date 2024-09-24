@@ -22,5 +22,15 @@ namespace marathon.pagesRunner
         {
             InitializeComponent();
         }
+
+        private void BackToLastPage(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new mainPage());
+        }
+
+        private void Login(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new authorizationMenuPage());
+        }
     }
 }

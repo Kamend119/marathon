@@ -10,8 +10,8 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*" />
-            <RowDefinition Height="3.5*" />
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="2.5*" />
             <RowDefinition Height="0.35*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -19,34 +19,66 @@
         </Grid.ColumnDefinitions>
 
         <Grid Background="#FF505050" Grid.Column="0" Grid.Row="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.15*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="0.15*" />
-            </Grid.ColumnDefinitions>
-            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center">
-                <TextBlock FontSize="15" FontFamily="Open Sans Light">Назад</TextBlock>
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="5">
-                        </Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Border Grid.Column="1" Width="2,0,0,2">
-                <TextBlock VerticalAlignment="Center" FontWeight="Bold" FontSize="20" Foreground="White" FontFamily="Open Sans Semibold">MARATHON SKILLS 2016</TextBlock>
-            </Border>
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" FontSize="30" Foreground="White" FontFamily="Open Sans Semibold">MARATHON SKILLS 2016</TextBlock>
+                <TextBlock></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontStyle="Italic" FontSize="20" Foreground="LightGray" FontFamily="Open Sans Light">Москва, Россия</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontStyle="Italic" FontSize="20" Foreground="LightGray" FontFamily="Open Sans Light">среда 21 октября 2016</TextBlock>
+                <TextBlock></TextBlock>
+            </StackPanel>
         </Grid>
 
         <Grid Background="White" Grid.Column="0" Grid.Row="1" >
-
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock></TextBlock>
+                <Button Name="IWantToBecomeARunner" Height="60" Width="300" Background="#FFEBEBEB" Click="IWantToBecomeARunner_Click">
+                    <TextBlock FontSize="15" FontFamily="Open Sans Light">Я хочу стать бегуном</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10">
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock></TextBlock>
+                <Button Height="60" Width="300" Background="#FFE8EBEB">
+                    <TextBlock FontSize="15" FontFamily="Open Sans Light">Я хочу стать сопнсором бегуна</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10">
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock></TextBlock>
+                <Button Height="60" Width="300" Background="#FFEBEBEB">
+                    <TextBlock FontSize="15" FontFamily="Open Sans Light">Я хочу узнать больше о событии</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10">
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock></TextBlock>
+            </StackPanel>
+            <Border Width="90" Height="60" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                <Button Height="30" Width="70" Background="#FFEBEBEB" Click="Login">
+                    <TextBlock FontSize="15" FontFamily="Open Sans Light">Login</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5">
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Border>
         </Grid>
 
         <Grid Background="#FF505050" Grid.Column="0" Grid.Row="2" >
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans Light">18 дней 8 часов и 17 минут до старта марафона!</TextBlock>
         </Grid>
+
     </Grid>
 </Page>

@@ -42,7 +42,40 @@
         </Grid>
 
         <Grid Background="White" Grid.Column="0" Grid.Row="1" >
-
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock></TextBlock>
+                <Button Height="60" Width="300" Background="#FFEBEBEB" Click="Login">
+                    <TextBlock FontSize="15" FontFamily="Open Sans Light" FontStyle="Italic">Я участвовал ранее</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10">
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock></TextBlock>
+                <Button Height="60" Width="300" Background="#FFEBEBEB">
+                    <TextBlock FontSize="15" FontFamily="Open Sans Light" FontStyle="Italic">Я новый участник</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10">
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock></TextBlock>
+            </StackPanel>
+            <Border Width="90" Height="60" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                <Button Height="30" Width="70" Background="#FFEBEBEB" Click="Login">
+                    <TextBlock FontSize="15" FontFamily="Open Sans Light">Login</TextBlock>
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5">
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Border>
         </Grid>
 
         <Grid Background="#FF505050" Grid.Column="0" Grid.Row="2" >

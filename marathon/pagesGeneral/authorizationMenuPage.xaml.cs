@@ -15,14 +15,16 @@ using System.Windows.Shapes;
 
 namespace marathon.pagesGeneral
 {
-    /// <summary>
-    /// Логика взаимодействия для authorizationMenuPage.xaml
-    /// </summary>
     public partial class authorizationMenuPage : Page
     {
         public authorizationMenuPage()
         {
             InitializeComponent();
+        }
+
+        private void BackToScrin(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new mainPage());
         }
     }
 }
