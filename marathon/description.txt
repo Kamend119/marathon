@@ -1,0 +1,65 @@
+общие страницы:
+ун - главна€ - mainPage - 1
+меню авторизации - authorizationMenuPage - 3
+результаты прошедших гонок - resultPastRacesPage - 14
+
+страницы координатора:
+меню координатора - coordinatorMenuPage - 19
+обзор спонсоров - sponsorOverviewMenuPage - 21
+управление информацией о бегунах - informationManagementRunnerPage - 22
+управление бегунами - managementRunnerPage - 23
+редактирование профил€ бегуна - profileEditingPage - 24
+ун - показ сертификата - showingCertificatePage - 25
+
+страницы администратора: 
+меню администратора - adminMenuPage - 20
+управление благотворительными организаци€ми - managingCharitiesPage - 26
+добавление/редактирование благотворительных организаций - addingEditingCharitiesPage - 27
+управление волонтерами - managingVolunteersPage - 28
+загрузка волонтеров - uploadingVolunteersPage - 29
+управление пользовател€ми - managingUsersPage - 30
+редактирование пользователей - editingUsersPage - 31
+добавление нового пользовател€ - addingNewUserPage - 32
+
+страницы бегуна: 
+проверка уже введеных раньше бегунов - CheckRunnersPage - 2
+меню регистрации бегунов - runnerRegistrationMenuPage - 4
+рагистраци€ на марафон - registrationMarathonPage - 5
+подтверждение регистрации бегуна - confirmationRegistrationRunnersPage - 8
+меню бегуна - runnerMenuPage - 9
+редактирование профил€ - runnerprofileEditingPage - 16
+мои результаты участи€ в марафонах - myResultsMarathonsPage - 17
+мои спонсоры - mySponsorsPage - 18
+
+страницы спонсоров: 
+спонсор бегунов - runnerSponsorPage - 6
+подтверждение спонсорства - confirmationSponsorshipPage - 7
+
+калькул€торы: 
+bmi калькул€тор - BMICalculatorPage - 33
+bmr калькул€тор - BMRCalculatorPage - 34
+
+инвентарь: 
+инвентарь - inventoryPage - 35
+поступление инвентар€ - receiptPage - 36
+
+марафон: 
+подробна€ информаци€ - detailedInformationPage - 10
+информаци€ о марафоне - informationMarathonPage - 11
+ун - интерактивна€ карта - interactiveMapPage - 12
+список благотворительных организаций - listCharitiesPage - 13
+насколько долгий марафон - howLongMarathonPage - 15
+
+«аголовок Open Sans Semibold
+ќсновной     Open Sans Light
+јлтернативный          Arial
+
+зеленый            0 144  62
+желтый           253 193   0
+синий             36  29 112
+
+белый            255 255 255
+светло серый     235 235 235
+серый            180 180 180
+темно серый       80  80  80
+черный             0   0   0

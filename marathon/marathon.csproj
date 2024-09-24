@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF2A9706-7A0F-4871-840F-53E8EC83FED8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>marathon</RootNamespace>
+    <AssemblyName>marathon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="pagesAdministrator\addingEditingCharitiesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesAdministrator\addingNewUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesAdministrator\adminMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesAdministrator\editingUsersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesAdministrator\managingCharitiesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesAdministrator\managingUsersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesAdministrator\managingVolunteersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesAdministrator\uploadingVolunteersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCalculator\BMICalculatorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCalculator\BMRCalculatorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\addingNewUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\coordinatorMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\editingUsersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\informationManagementRunnerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\managingUsersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\managingVolunteersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\sponsorOverviewMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesCoordinator\uploadingVolunteersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesGeneral\authorizationMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesGeneral\mainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesGeneral\resultPastRacesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesInventory\inventoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesInventory\receiptPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesMarathon\detailedInformationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesMarathon\howLongMarathonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesMarathon\informationMarathonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesMarathon\interactiveMapPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesMarathon\listCharitiesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\CheckRunnersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\confirmationRegistrationRunnersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\myResultsMarathonsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\mySponsorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\registrationMarathonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\runnerMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\runnerprofileEditingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesRunner\runnerRegistrationMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesSponsor\confirmationSponsorshipPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pagesSponsor\runnerSponsorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="pagesAdministrator\addingEditingCharitiesPage.xaml.cs">
+      <DependentUpon>addingEditingCharitiesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesAdministrator\addingNewUserPage.xaml.cs">
+      <DependentUpon>addingNewUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesAdministrator\adminMenuPage.xaml.cs">
+      <DependentUpon>adminMenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesAdministrator\editingUsersPage.xaml.cs">
+      <DependentUpon>editingUsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesAdministrator\managingCharitiesPage.xaml.cs">
+      <DependentUpon>managingCharitiesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesAdministrator\managingUsersPage.xaml.cs">
+      <DependentUpon>managingUsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesAdministrator\managingVolunteersPage.xaml.cs">
+      <DependentUpon>managingVolunteersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesAdministrator\uploadingVolunteersPage.xaml.cs">
+      <DependentUpon>uploadingVolunteersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCalculator\BMICalculatorPage.xaml.cs">
+      <DependentUpon>BMICalculatorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCalculator\BMRCalculatorPage.xaml.cs">
+      <DependentUpon>BMRCalculatorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\addingNewUserPage.xaml.cs">
+      <DependentUpon>addingNewUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\coordinatorMenuPage.xaml.cs">
+      <DependentUpon>coordinatorMenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\editingUsersPage.xaml.cs">
+      <DependentUpon>editingUsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\informationManagementRunnerPage.xaml.cs">
+      <DependentUpon>informationManagementRunnerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\managingUsersPage.xaml.cs">
+      <DependentUpon>managingUsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\managingVolunteersPage.xaml.cs">
+      <DependentUpon>managingVolunteersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\sponsorOverviewMenuPage.xaml.cs">
+      <DependentUpon>sponsorOverviewMenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesCoordinator\uploadingVolunteersPage.xaml.cs">
+      <DependentUpon>uploadingVolunteersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesGeneral\authorizationMenuPage.xaml.cs">
+      <DependentUpon>authorizationMenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesGeneral\mainPage.xaml.cs">
+      <DependentUpon>mainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesGeneral\resultPastRacesPage.xaml.cs">
+      <DependentUpon>resultPastRacesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesInventory\inventoryPage.xaml.cs">
+      <DependentUpon>inventoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesInventory\receiptPage.xaml.cs">
+      <DependentUpon>receiptPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesMarathon\detailedInformationPage.xaml.cs">
+      <DependentUpon>detailedInformationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesMarathon\howLongMarathonPage.xaml.cs">
+      <DependentUpon>howLongMarathonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesMarathon\informationMarathonPage.xaml.cs">
+      <DependentUpon>informationMarathonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesMarathon\interactiveMapPage.xaml.cs">
+      <DependentUpon>interactiveMapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesMarathon\listCharitiesPage.xaml.cs">
+      <DependentUpon>listCharitiesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\CheckRunnersPage.xaml.cs">
+      <DependentUpon>CheckRunnersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\confirmationRegistrationRunnersPage.xaml.cs">
+      <DependentUpon>confirmationRegistrationRunnersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\myResultsMarathonsPage.xaml.cs">
+      <DependentUpon>myResultsMarathonsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\mySponsorsPage.xaml.cs">
+      <DependentUpon>mySponsorsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\registrationMarathonPage.xaml.cs">
+      <DependentUpon>registrationMarathonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\runnerMenuPage.xaml.cs">
+      <DependentUpon>runnerMenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\runnerprofileEditingPage.xaml.cs">
+      <DependentUpon>runnerprofileEditingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesRunner\runnerRegistrationMenuPage.xaml.cs">
+      <DependentUpon>runnerRegistrationMenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesSponsor\confirmationSponsorshipPage.xaml.cs">
+      <DependentUpon>confirmationSponsorshipPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pagesSponsor\runnerSponsorPage.xaml.cs">
+      <DependentUpon>runnerSponsorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="description.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
