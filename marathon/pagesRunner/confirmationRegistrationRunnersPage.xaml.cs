@@ -27,5 +27,10 @@ namespace marathon.pagesRunner
         {
             this.NavigationService.Navigate(new mainPage());
         }
+
+        private void BackToScrin(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new runnerMenuPage());
+        }
     }
 }

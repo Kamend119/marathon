@@ -1,4 +1,5 @@
 ﻿using marathon.pagesGeneral;
+using marathon.pagesInventory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace marathon.pagesAdministrator
 {
@@ -22,10 +24,29 @@ namespace marathon.pagesAdministrator
         {
             InitializeComponent();
         }
-
         private void Logout(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new mainPage());
+        }
+
+        private void users(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new managingUsersPage());
+        }
+
+        private void charitableOrganizations(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new managingCharitiesPage());
+        }
+
+        private void volunteers(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new managingVolunteersPage());
+        }
+
+        private void Inventory(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new inventoryPage());
         }
     }
 }

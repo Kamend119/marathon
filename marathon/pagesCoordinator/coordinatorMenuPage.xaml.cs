@@ -27,5 +27,15 @@ namespace marathon.pagesCoordinator
         {
             this.NavigationService.Navigate(new mainPage());
         }
+
+        private void Sponsors(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new sponsorOverviewMenuPage());
+        }
+
+        private void Runners(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new informationManagementRunnerPage());
+        }
     }
 }

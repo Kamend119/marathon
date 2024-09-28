@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" />        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="0.35*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="White" Grid.Column="0" Grid.Row="0" >
+            <Frame Name="MainFrame" NavigationUIVisibility="Hidden" />
+        </Grid>
+
+        <Grid Background="#FF505050" Grid.Column="0" Grid.Row="1" >
+            <TextBlock x:Name="CountdownTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans Light"/>
+        </Grid>    
     </Grid>
 </Window>

@@ -27,5 +27,30 @@ namespace marathon.pagesRunner
         {
             this.NavigationService.Navigate(new mainPage());
         }
+
+        private void registrationForTheMarathon(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new registrationMarathonPage());
+        }
+
+        private void editingProfile(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new runnerprofileEditingPage());
+        }
+
+        private void contacts(object sender, RoutedEventArgs e)
+        {
+            // всплывающие окно
+        }
+
+        private void myResults(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new myResultsMarathonsPage());
+        }
+
+        private void mySponsor(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new mySponsorsPage());
+        }
     }
 }

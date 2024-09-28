@@ -4,6 +4,7 @@ using marathon.pagesSponsor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Lifetime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace marathon.pagesGeneral
 {
@@ -23,8 +25,15 @@ namespace marathon.pagesGeneral
         public mainPage()
         {
             InitializeComponent();
+            UpdateCurrentDate();
         }
-        private void IWantToBecomeARunner_Click(object sender, RoutedEventArgs e)
+
+        // Метод для отображения текущей даты
+        private void UpdateCurrentDate()
+        {
+            CurrentDateTextBlock.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy"); // Пример формата: "среда, 21 октября 2016"
+        }
+        private void IWantToBecomeARunner(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new CheckRunnersPage());
         }

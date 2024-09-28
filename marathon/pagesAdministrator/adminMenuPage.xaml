@@ -12,7 +12,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*" />
             <RowDefinition Height="3.5*" />
-            <RowDefinition Height="0.35*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -27,7 +26,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="0.15*" />
             </Grid.ColumnDefinitions>
-            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center">
+            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center" Click="Logout">
                 <TextBlock FontSize="15" FontFamily="Open Sans Light">Назад</TextBlock>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -51,11 +50,79 @@
         </Grid>
 
         <Grid Background="White" Grid.Column="0" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="0.5*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
 
-        </Grid>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="#FF505050" FontFamily="Open Sans Light">Меню администратора</TextBlock>
 
-        <Grid Background="#FF505050" Grid.Column="0" Grid.Row="2" >
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans Light">18 дней 8 часов и 17 минут до старта марафона!</TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Grid.Row="0" Width="275" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Button Height="60" Width="250" Background="#FFE8EBEB" Click="users">
+                        <TextBlock FontSize="15" FontStyle="Italic" FontFamily="Open Sans Light">Пользователи</TextBlock>
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10">
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="1" Width="275" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Button Height="60" Width="250" Background="#FFE8EBEB" Click="charitableOrganizations">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel>
+                            <TextBlock FontSize="15" FontStyle="Italic" FontFamily="Open Sans Light" TextAlignment="Center">
+                                Благотворительные
+                            </TextBlock>
+                            <TextBlock FontSize="15" FontStyle="Italic" FontFamily="Open Sans Light" TextAlignment="Center">
+                                организации
+                            </TextBlock>
+                        </StackPanel>
+                    </Button>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="0" Width="275" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button Height="60" Width="250" Background="#FFE8EBEB" Click="volunteers">
+                        <TextBlock FontSize="15" FontStyle="Italic" FontFamily="Open Sans Light">Волонтеры</TextBlock>
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10">
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="1" Width="275" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button Height="60" Width="250" Background="#FFE8EBEB" Click="Inventory">
+                        <TextBlock FontSize="15" FontStyle="Italic" FontFamily="Open Sans Light">Инвентарь</TextBlock>
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10">
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Border>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

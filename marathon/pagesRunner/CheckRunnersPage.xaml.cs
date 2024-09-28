@@ -32,5 +32,10 @@ namespace marathon.pagesRunner
         {
             this.NavigationService.Navigate(new authorizationMenuPage());
         }
+
+        private void INewMember(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new runnerRegistrationMenuPage());
+        }
     }
 }

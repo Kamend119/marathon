@@ -15,14 +15,46 @@ using System.Windows.Shapes;
 
 namespace marathon.pagesCalculator
 {
-    /// <summary>
-    /// Логика взаимодействия для BMICalculatorPage.xaml
-    /// </summary>
     public partial class BMICalculatorPage : Page
     {
         public BMICalculatorPage()
         {
             InitializeComponent();
+        }
+
+        private void BackToScrin(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void calculate(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cancellation(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void height_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void weight_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void btnMale_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnFemale_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

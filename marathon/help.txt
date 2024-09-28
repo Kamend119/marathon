@@ -1,0 +1,13 @@
+страница 9 - надо сделать всплывающее окно по кнопке "Контакты" (runnerMenuPage)
+страница 3 - нужно сделать логику для кнопки "Login" (authorizationMenuPage)
+страница 1 (mainPage.xaml) - надо с датами поменять 
+editingUsersPage.xaml - доделать 
+
+готовы:
+страница 2 (CheckRunnersPage.xaml)
+страница 8 (confirmationRegistrationRunnersPage.xaml)
+страница 10 (detailedInformationPage)
+страница 19 (coordinatorMenuPage.xaml)
+страница 20 (adminMenuPage.xaml)
+
+на страницах с выходом написать логику выхода из аккаунта

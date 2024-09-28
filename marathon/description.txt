@@ -1,54 +1,54 @@
-общие страницы:
-ун - главная - mainPage - 1
-меню авторизации - authorizationMenuPage - 3
-результаты прошедших гонок - resultPastRacesPage - 14
-
-страницы координатора:
-меню координатора - coordinatorMenuPage - 19
-обзор спонсоров - sponsorOverviewMenuPage - 21
-управление информацией о бегунах - informationManagementRunnerPage - 22
-управление бегунами - managementRunnerPage - 23
-редактирование профиля бегуна - profileEditingPage - 24
-ун - показ сертификата - showingCertificatePage - 25
-
 страницы администратора: 
-меню администратора - adminMenuPage - 20
-управление благотворительными организациями - managingCharitiesPage - 26
-добавление/редактирование благотворительных организаций - addingEditingCharitiesPage - 27
-управление волонтерами - managingVolunteersPage - 28
-загрузка волонтеров - uploadingVolunteersPage - 29
-управление пользователями - managingUsersPage - 30
-редактирование пользователей - editingUsersPage - 31
-добавление нового пользователя - addingNewUserPage - 32
-
-страницы бегуна: 
-проверка уже введеных раньше бегунов - CheckRunnersPage - 2
-меню регистрации бегунов - runnerRegistrationMenuPage - 4
-рагистрация на марафон - registrationMarathonPage - 5
-подтверждение регистрации бегуна - confirmationRegistrationRunnersPage - 8
-меню бегуна - runnerMenuPage - 9
-редактирование профиля - runnerprofileEditingPage - 16
-мои результаты участия в марафонах - myResultsMarathonsPage - 17
-мои спонсоры - mySponsorsPage - 18
-
-страницы спонсоров: 
-спонсор бегунов - runnerSponsorPage - 6
-подтверждение спонсорства - confirmationSponsorshipPage - 7
+addingEditingCharitiesPage - добавление/редактирование благотворительных организаций - 27
+addingNewUserPage - добавление нового пользователя - 32
+adminMenuPage - меню администратора - 20
+editingUsersPage - редактирование пользователей - 31
+managingCharitiesPage - управление благотворительными организациями - 26
+managingUsersPage - управление пользователями - 30
+managingVolunteersPage - управление волонтерами - 28
+uploadingVolunteersPage - загрузка волонтеров – 29
 
 калькуляторы: 
-bmi калькулятор - BMICalculatorPage - 33
-bmr калькулятор - BMRCalculatorPage - 34
+BMICalculatorPage - bmi калькулятор - 33
+BMRCalculatorPage - bmr калькулятор - 34
+
+страницы координатора:
+coordinatorMenuPage - меню координатора - 19
+informationManagementRunnerPage - управление информацией о бегунах - 22
+managementRunnerPage - управление бегунами - 23
+profileEditingPage – редактирование профиля бегуна - 24
+showingCertificatePage - ун - показ сертификата - 25
+sponsorOverviewMenuPage - обзор спонсоров - 21
+
+общие страницы:
+authorizationMenuPage - меню авторизации - 3
+mainPage - ун - главная - 1
+resultPastRacesPage - результаты прошедших гонок - 14
 
 инвентарь: 
-инвентарь - inventoryPage - 35
-поступление инвентаря - receiptPage - 36
+inventoryPage - инвентарь - 35
+receiptPage - поступление инвентаря - 36
 
 марафон: 
-подробная информация - detailedInformationPage - 10
-информация о марафоне - informationMarathonPage - 11
-ун - интерактивная карта - interactiveMapPage - 12
-список благотворительных организаций - listCharitiesPage - 13
-насколько долгий марафон - howLongMarathonPage - 15
+detailedInformationPage - подробная информация - 10
+howLongMarathonPage - насколько долгий марафон - 15
+informationMarathonPage - информация о марафоне - 11
+interactiveMapPage - ун - интерактивная карта - 12
+listCharitiesPage - список благотворительных организаций - 13
+
+страницы бегуна: 
+CheckRunnersPage - проверка уже введеных раньше бегунов - 2
+confirmationRegistrationRunnersPage - подтверждение регистрации бегуна - 8
+myResultsMarathonsPage - мои результаты участия в марафонах - 17
+mySponsorsPage - мои спонсоры - 18
+registrationMarathonPage - рагистрация на марафон - 5
+runnerMenuPage - меню бегуна - 9
+runnerprofileEditingPage - редактирование профиля - 16
+runnerRegistrationMenuPage - меню регистрации бегунов - 4
+
+страницы спонсоров: 
+confirmationSponsorshipPage - подтверждение спонсорства - 7
+runnerSponsorPage - спонсор бегунов - 6
 
 Заголовок Open Sans Semibold
 Основной     Open Sans Light

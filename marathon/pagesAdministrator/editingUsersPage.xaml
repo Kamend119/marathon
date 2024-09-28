@@ -12,7 +12,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*" />
             <RowDefinition Height="3.5*" />
-            <RowDefinition Height="0.35*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -27,7 +26,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="0.15*" />
             </Grid.ColumnDefinitions>
-            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center">
+            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center" Click="BackToScrin">
                 <TextBlock FontSize="15" FontFamily="Open Sans Light">Назад</TextBlock>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -51,11 +50,124 @@
         </Grid>
 
         <Grid Background="White" Grid.Column="0" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1.5*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
 
-        </Grid>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="#FF505050" FontFamily="Open Sans Light">Редактирование пользователя</TextBlock>
 
-        <Grid Background="#FF505050" Grid.Column="0" Grid.Row="2" >
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans Light">18 дней 8 часов и 17 минут до старта марафона!</TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.3*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Email:</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Margin="10,0,0,0">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" Foreground="Black" FontFamily="Open Sans Light" FontStyle="Italic"/>
+                    </Border>
+
+                    <Border Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Имя:</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="10,0,0,0">
+                        <TextBox Name="LastName" TextWrapping="Wrap" Text="Имя" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" FontSize="15" Foreground="#FF999999" FontFamily="Open Sans Light" FontStyle="Italic" TextChanged="LastName_TextChanged"/>
+                    </Border>
+
+                    <Border Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Фамилия:</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="10,0,0,0">
+                        <TextBox Name="FirstName" TextWrapping="Wrap" Text="Фамилия" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" FontSize="15" Foreground="#FF999999" FontFamily="Open Sans Light" FontStyle="Italic" TextChanged="FirstName_TextChanged"/>
+                    </Border>
+
+                    <Border Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Роль:</TextBlock>
+                    </Border>
+                    <Border Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Margin="10,0,0,0">
+                        <ComboBox Name="cmbRole" Width="200" Height="20" Text="" FontFamily="Open Sans Light" FontSize="15" SelectionChanged="cmbRole_SelectionChanged" />
+                    </Border>
+                </Grid>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" Foreground="#FF505050" FontFamily="Open Sans Light">Смена пароля</TextBlock>
+                    <TextBlock></TextBlock>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="#FF505050" FontStyle="Italic" FontFamily="Open Sans Light">Оставте эти поля, незаполненными,</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="#FF505050" FontStyle="Italic" FontFamily="Open Sans Light">если вы не хотите изменять пароль</TextBlock>
+                    <TextBlock></TextBlock>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right">
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="Black" FontFamily="Open Sans Light">Пароль:</TextBlock>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Margin="10,0,0,0">
+                            <TextBox Name="Password" TextWrapping="Wrap" Text="Password" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" FontSize="15" Foreground="#FF999999" FontFamily="Open Sans Light" FontStyle="Italic" TextChanged="Password_TextChanged"/>
+                        </Border>
+
+                        <Border Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right">
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Foreground="Black" FontFamily="Open Sans Light">Повтор пароля:</TextBlock>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="10,0,0,0">
+                            <TextBox Name="RepeatPassword" TextWrapping="Wrap" Text="Re-ented password" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" FontSize="15" Foreground="#FF999999" FontFamily="Open Sans Light" FontStyle="Italic" TextChanged="RepeatPassword_TextChanged"/>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0">
+                <Border Width="90">
+                    <Button Height="30" Width="80" Background="#FFEBEBEB" Click="Save">
+                        <TextBlock FontSize="15" FontFamily="Open Sans Light">Сохранить</TextBlock>
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5">
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Border>
+                <Border Width="80">
+                    <Button Height="30" Width="70" Background="#FFEBEBEB" Click="BackToScrin">
+                        <TextBlock FontSize="15" FontFamily="Open Sans Light">Отмена</TextBlock>
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5">
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Border>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

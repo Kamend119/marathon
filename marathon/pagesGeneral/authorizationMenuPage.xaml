@@ -12,7 +12,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*" />
             <RowDefinition Height="3.5*" />
-            <RowDefinition Height="0.35*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -74,7 +73,7 @@
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <Border Width="90">
-                        <Button Height="25" Width="60" Background="#FFEBEBEB">
+                        <Button Height="25" Width="60" Background="#FFEBEBEB" Click="Login">
                             <TextBlock FontSize="15" FontFamily="Open Sans Light">Login</TextBlock>
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
@@ -85,7 +84,7 @@
                         </Button>
                     </Border>
                     <Border Width="90">
-                        <Button Height="25" Width="60" Background="#FFEBEBEB">
+                        <Button Height="25" Width="60" Background="#FFEBEBEB" Click="BackToScrin">
                             <TextBlock FontSize="15" FontFamily="Open Sans Light">Cancel</TextBlock>
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
@@ -97,10 +96,6 @@
                     </Border>
                 </StackPanel>
             </StackPanel>
-        </Grid>
-
-        <Grid Background="#FF505050" Grid.Column="0" Grid.Row="2" >
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans Light">18 дней 8 часов и 17 минут до старта марафона!</TextBlock>
         </Grid>
     </Grid>
 </Page>

@@ -363,6 +363,51 @@
   <ItemGroup>
     <Resource Include="description.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="help.txt" />
+  </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Resource Include="resources\bmiIcons\bmi-healthy-icon.png" />
+    <Resource Include="resources\bmiIcons\bmi-obese-icon.png" />
+    <Resource Include="resources\bmiIcons\bmi-overweight-icon.png" />
+    <Resource Include="resources\bmiIcons\bmi-underweight-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\genderIcons\female-icon.png" />
+    <Resource Include="resources\genderIcons\male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\howLongImages\airbus-a380.jpg" />
+    <Resource Include="resources\howLongImages\bus.jpg" />
+    <Resource Include="resources\howLongImages\capybara.jpg" />
+    <Resource Include="resources\howLongImages\f1-car.jpg" />
+    <Resource Include="resources\howLongImages\football-field.jpg" />
+    <Resource Include="resources\howLongImages\horse.png" />
+    <Resource Include="resources\howLongImages\jaguar.jpg" />
+    <Resource Include="resources\howLongImages\pair-of-havaianas.jpg" />
+    <Resource Include="resources\howLongImages\ronaldinho.jpg" />
+    <Resource Include="resources\howLongImages\sloth.jpg" />
+    <Resource Include="resources\howLongImages\slug.jpg" />
+    <Resource Include="resources\howLongImages\worm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\mapIcons\map-icon-drinks.png" />
+    <Resource Include="resources\mapIcons\map-icon-energy-bars.png" />
+    <Resource Include="resources\mapIcons\map-icon-information.png" />
+    <Resource Include="resources\mapIcons\map-icon-medical.png" />
+    <Resource Include="resources\mapIcons\map-icon-start.png" />
+    <Resource Include="resources\mapIcons\map-icon-toilets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\marathonPhoto\banco-banespa.jpg" />
+    <Resource Include="resources\marathonPhoto\ibirapuera-park-lake.jpg" />
+    <Resource Include="resources\marathonPhoto\marathon-image.jpg" />
+    <Resource Include="resources\marathonPhoto\teatro-municipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\statusIcons\cross-icon.png" />
+    <Resource Include="resources\statusIcons\tick-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

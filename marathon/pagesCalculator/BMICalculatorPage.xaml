@@ -12,7 +12,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*" />
             <RowDefinition Height="3.5*" />
-            <RowDefinition Height="0.35*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -27,7 +26,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="0.15*" />
             </Grid.ColumnDefinitions>
-            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center">
+            <Button Height="25" Width="60" Background="#FFB4B4B4" VerticalAlignment="Center" Click="BackToScrin">
                 <TextBlock FontSize="15" FontFamily="Open Sans Light">Назад</TextBlock>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -41,12 +40,75 @@
             </Border>
         </Grid>
 
-        <Grid Background="White" Grid.Column="0" Grid.Row="1" >
+        <StackPanel Background="White" Grid.Column="0" Grid.Row="1" >
+            <Border Margin="20,20">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="#FF505050" FontFamily="Open Sans Light">BMI калькулятор</TextBlock>
+            </Border>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-        </Grid>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Margin="10,10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" Foreground="Black" FontFamily="Open Sans Light"> Информация о том что такое BMI и<LineBreak/>как калькулятор работает</TextBlock>
 
-        <Grid Background="#FF505050" Grid.Column="0" Grid.Row="2" >
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans Light">18 дней 8 часов и 17 минут до старта марафона!</TextBlock>
-        </Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Grid Height="68" Width="78" Margin="20">
+                            <CheckBox x:Name="check_male" Content="CheckBox" HorizontalAlignment="Left" Margin="1,13,0,0" VerticalAlignment="Top"/>
+                            <Button Name="btnMale" Click="btnMale_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Height="68"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="5,48,0,3" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14" Width="67" TextAlignment="Center" Foreground="#FF6C6C6C" Height="17" Text="Мужской"/>
+                            <Image Source="/resources/genderIcons/male-icon.png" HorizontalAlignment="Left" Margin="29,4,0,19" />
+                        </Grid>
+
+                        <Grid Height="68" Width="78" Margin="20">
+                            <CheckBox Name="check_female" Content="CheckBox" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top"/>
+                            <Button Name="btnFemale" Click="btnFemale_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Height="68" Margin="1,-2,-1,0"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="7,46,0,5" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14" Width="67" TextAlignment="Center" Foreground="#FF6C6C6C" Height="17" Text="Женский"/>
+                            <Image Source="/resources/genderIcons/female-icon.png" Margin="20,2,18,22"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Рост:</TextBlock>
+                        <TextBox Name="height" Margin="5"  TextWrapping="Wrap" Text="170" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" FontSize="15" Foreground="#FF999999" FontFamily="Open Sans Light" FontStyle="Italic" TextChanged="height_TextChanged"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">см</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">Вес:</TextBlock>
+                        <TextBox Name="weight" Margin="5"  TextWrapping="Wrap" Text="70" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" FontSize="15" Foreground="#FF999999" FontFamily="Open Sans Light" FontStyle="Italic" TextChanged="weight_TextChanged"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="15" Foreground="Black" FontFamily="Open Sans Light">кг</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Height="30" Width="70" Background="#FFEBEBEB" Click="calculate" Margin="10">
+                            <TextBlock FontSize="12" FontFamily="Open Sans Light">Рассчитать</TextBlock>
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="5">
+                                    </Setter>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <Button Height="30" Width="70" Background="#FFEBEBEB" Click="cancellation" Margin="10">
+                            <TextBlock FontSize="12" FontFamily="Open Sans Light">Отмена</TextBlock>
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="5">
+                                    </Setter>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+
+                
+            </Grid>            
+        </StackPanel>
     </Grid>
 </Page>

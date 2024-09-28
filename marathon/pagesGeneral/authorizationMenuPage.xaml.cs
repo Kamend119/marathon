@@ -26,5 +26,10 @@ namespace marathon.pagesGeneral
         {
             this.NavigationService.Navigate(new mainPage());
         }
+
+        private void Login(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
